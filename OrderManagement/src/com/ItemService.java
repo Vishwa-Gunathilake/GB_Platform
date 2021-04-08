@@ -29,6 +29,7 @@ public class ItemService {
 	public String insertItem(@FormParam("itemCode") String itemCode, @FormParam("itemName") String itemName,
 			@FormParam("itemPrice") String itemPrice, @FormParam("itemDesc") String itemDesc) {
 		String output = itemObj.insertItem(itemCode, itemName, itemPrice, itemDesc);
+		System.out.println("Hello");
 		return output;
 	}
 
